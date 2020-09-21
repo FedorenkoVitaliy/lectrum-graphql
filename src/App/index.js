@@ -1,13 +1,16 @@
-import React from 'react'
+//Core
+import React from 'react';
+import { ApolloProvider } from '@apollo/react-hooks'
 
-const App = () => {
+//Other
+import { client } from './init/client'
+
+export const App = () => {
   return(
-    <>
-      <p>Welcome</p>
-    </>
+    <ApolloProvider client={client}>
+      <>
+        <p>Welcome</p>
+      </>
+    </ApolloProvider>
   )
-}
-
-export {
-  App
-}
+};

@@ -8,7 +8,7 @@ const queryAvailablePets = loader('./gql/queryAvailablePets.graphql');
 export const useQueryAvailablePets = () => {
   return useQuery(queryAvailablePets, {
     //variables: { type },
-    pollInterval: 500,
+    //pollInterval: 500,
     //skip: !type
   });
 }
